@@ -23,3 +23,16 @@ def print_info(*args):
                 counter += 1
         if isinstance(res,str):
             print(res)
+
+
+def get_search_option():
+    search_info = input("Введите ключевое слово для поиска или дату заметки в формате ДД-ММ-ГГГГ: ").lower()
+    return search_info
+
+def select_str_in_note():
+    num = int(input("Выберите строку для удаления: "))
+    return num - 1
+
+def select_str_in_note_edit():
+    num = int(input("Выберите строку для редактирования: "))
+    return num - 1
