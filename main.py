@@ -27,5 +27,10 @@ def main():
             new_line = get_note_info()
             result_note = change_or_delete_note(all_notes, note_accepted[selected_note_numb_of_str], new_line)
             print_info(result_note)
+        if ans == 5:
+            result_note = view_all()
+            print_info(result_note)
+        if ans == 6:
+            break
 
 main()

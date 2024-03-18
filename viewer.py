@@ -1,7 +1,7 @@
 import datetime
 from data_csv import number_lines
 def select():
-    get_select = int(input("Выберите действие: \n1-создание заметки  \n2-поиск заметки \n3-удаление заметки \n4-редактирование заметки \n5-показать все заметки \n6-выход"))
+    get_select = int(input("Выберите действие:  \n1-создание заметки  \n2-поиск заметки \n3-удаление заметки \n4-редактирование заметки \n5-показать все заметки \n6-выход\n"))
     return get_select
 
 def get_note_info():

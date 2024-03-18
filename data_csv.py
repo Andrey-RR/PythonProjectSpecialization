@@ -35,4 +35,9 @@ def change_or_delete_note(old_note, delete_note, new_line=None):
             file.write(line)
     return "заметка удалена" if not new_line else "заметка изменена"
 
+def view_all():
+    with open("data.csv", "r",encoding="utf-8") as file:
+        return file.read()
+
+
 
